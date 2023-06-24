@@ -1,0 +1,76 @@
+body{
+    background-color: darkgreen;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    color: azure;
+    margin: 0;
+    padding: 0;;
+}
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 2px 25px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: transparent;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.logo:hover {
+  animation: inLogo 1s ease .45s forwards;
+}
+@keyframes inLogo{
+  0% {
+      transform-origin: 0 100%;
+      transform:  rotate(0deg);
+    }
+  
+    25% {
+      transform-origin: 0 100%;
+      transform:  rotate(5deg);
+    }
+  
+    50% {
+      transform-origin: 0 100%;
+      transform:  rotate(-5deg);
+    }
+  
+    65% {
+      transform-origin: 0 100%;
+      transform:  rotate(5deg);
+    }
+  
+    100% {
+      transform-origin: 0 100%;
+      transform:  rotate(0deg);
+    }
+
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+.nav-links li a:hover{
+  text-shadow:  4px 4px 12px #c5c5c5,
+  -4px -4px 12px #ffffff;;
+}
